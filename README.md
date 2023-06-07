@@ -153,7 +153,7 @@ Matrix size: nx 4096 ny 4096
 initialization: 	 0.471329 sec
 sumMatrix on host:	 0.034168 sec
 sumMatrix on gpu :	 0.023536 sec <<<(128,128), (32,32)>>> 
-root@SAV-MLSystem:/home/student/Aathish_Exp_04#
+root@SAV-MLSystem:/home/student/Mathan_Exp_04#
 ```
 ## EXPLANATION:
 The memsets are used to initialize the hostRef and gpuRef arrays to zero before the computation of the sumMatrixOnHost and sumMatrixGPU functions respectively. Removing these memsets may result in incorrect results if there is any existing data in these arrays.
